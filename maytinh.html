@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="a"> <input type="text" id="b"><br>
+<button type="button" onclick="cong()">cộng (+)</button>
+<button type="button" onclick="tru()">trừ (-)</button>
+<button type="button" onclick="nhan()">nhân (x)</button>
+<button type="button" onclick="chia()">chia (/)</button>
+<p id="kq">0</p>
+
+<script>
+    function cong(){
+        let a = +document.getElementById("a").value
+        let b = +document.getElementById("b").value
+        let cong = a+b
+        document.getElementById("kq").innerHTML = cong
+    }
+    function tru(){
+        let a = +document.getElementById("a").value
+        let b = +document.getElementById("b").value
+        let tru = a-b
+        document.getElementById("kq").innerHTML = tru
+    }
+    function nhan(){
+        let a = +document.getElementById("a").value
+        let b = +document.getElementById("b").value
+        let nhan = a*b
+        document.getElementById("kq").innerHTML = nhan
+    }
+    function chia(){
+        let a = +document.getElementById("a").value
+        let b = +document.getElementById("b").value
+        let chia = a/b
+        document.getElementById("kq").innerHTML = chia
+    }
+
+
+
+
+</script>
+</body>
+</html>
